@@ -1,27 +1,39 @@
 /*== MAIN*/
-.page_bg_img{
-    /*background-repeat: no-repeat;*/
-    height: 100vh;
+.logo{
+    font-family: 'Lobster', 'Ubuntu','latoregular', sans-serif;
+    font-size: 6rem;
+    line-height: 10rem;
+    color: #1ae788;
 }
-.shadow_filter{
+
+.page_bg_img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shadow_filter_first{
     width: 100%;
     height: 100%;
     background-color: rgba(65, 42, 36, 0.5);
-
+}
+.shadow_filter_second{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 42, 36, 0.5);
 }
 
 .inscription_bg{
     text-align: center;
     position: relative;
-    top: 38%;
+    top: 28%;
     padding: 3% 0;
-    /*background-color: rgba(65, 42, 36, 0.7);*/
 }
 
 .menu_card{
     text-align: center;
     position: relative;
-    top: 38%;
+    top: 20%;
     width: 80%;
     margin: auto;
     padding: 3% 0;
@@ -29,7 +41,7 @@
 }
 
 .spacer_beans{
-    background-image: url("../images/cup_img.jpg");
+    background-image: url("../images/cafe_beans.jpg");
     height: 30vh;
 }
 
@@ -37,37 +49,41 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #552812;
+    background-color: #564946;
     padding: 2% 0;
-
+    z-index: 2;
 }
 
 /*== FONT  SIZE*/
 html body {
     font-size: 62.5%;
-    font-family: 'latoregular', sans-serif;
-    color: white;
+    font-family: 'Ubuntu','latoregular', sans-serif;
+    color: #F7FFF7;
 }
 
 p, li {
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 4rem;
     line-height: 5rem;
-    font-family: 'latoblack', sans-serif;
+    font-family: 'Ubuntu', 'latoblack', sans-serif;
+    color: #EF2D56;
 }
 
 h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-    font-family: 'latoblack', sans-serif;
+    font-family: 'Lobster', 'Ubuntu','latoregular', sans-serif;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #EF2D56;
 }
 
-h3 {
-    font-size: 1.8rem;
+h3{
+    font-family: 'Ubuntu','latoregular', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 
 @font-face {
@@ -102,7 +118,7 @@ ANIMATIONS
 .bottom_arrow{
     text-align: center;
     position: relative;
-    top: 58%;
+    top: 48%;
 }
 @keyframes arrow {
     0%{
@@ -133,13 +149,42 @@ INTRO PAGE
 PAGE MENU
 */
 
+/*@keyframes menuItem{*/
+    /*0%{*/
+        /*transform: rotate(45deg);*/
+    /*}*/
+/*}*/
+
 .page_menu {
     background-image: url("../images/secondpage_img.jpg");
 }
 
+.page_menu h2{
+    line-height: 9rem;
+}
+
 .page_menu li{
     display: inline-block;
-    padding: 0 3%;
+    font-size: 2.5rem;
+    padding: 0.5% 1.5%;
+    border-radius: 5px;
+    margin-right: 1%;
+    color: #1ae788;
+    background-color: rgba(255,255,255,0.8);
+
+
+
+}
+
+.page_menu li:hover{
+    color: white;
+    background-color: #1ae788;
+
+    /*animation-name: menuItem;*/
+    /*animation-duration: 1s;*/
+    /*animation-timing-function: ease-out;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
 }
 
 /*

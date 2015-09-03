@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).load(function () {
 
 
 
@@ -28,11 +28,8 @@ $(".bottom_arrow").on("click",
 
     var myNavigationPosition = myNavigation.offset().top;
     var height1 = $('.page_intro').height();
-    console.log(height1)
     var height2 = $('.spacer_beans').height();
-    console.log(height2)
     var height3 = $('.page_menu').height()/2;
-    console.log(height3)
 
     var allHeight = height1 + height2+ height3;
 
