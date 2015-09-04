@@ -6,20 +6,19 @@ $(".bottom_arrow").on("click",
     function(){
         var myHref = $(this).data("href");
         $("html, body").animate({scrollTop: $("#" + myHref).position().top}, 1000);
-
-
-
     });
 
     $("li").on("click",
         function(){
             var myHref = $(this).data("href");
             $("html, body").animate({scrollTop: $("#" + myHref).position().top}, 1000);
-
-
-
         });
 
+    $(".arrow_go_top").on("click",
+        function(){
+            var myHref = $(this).data("href");
+            $("html, body").animate({scrollTop: $("#" + myHref).position().top}, 1000);
+        });
 
 //STICKY MENU
 
@@ -29,7 +28,7 @@ $(".bottom_arrow").on("click",
     var myNavigationPosition = myNavigation.offset().top;
     var height1 = $('.page_intro').height();
     var height2 = $('.spacer_beans').height();
-    var height3 = $('.page_menu').height()/2;
+    var height3 = $('.page_menu').height()/3;
 
     var allHeight = height1 + height2+ height3;
 
@@ -38,7 +37,6 @@ $(".bottom_arrow").on("click",
         var scrollPosition = $(window).scrollTop();
 
         if(scrollPosition > allHeight) {
-            console.log('wiwiwi');
             myNavigation.addClass('sticky');
         } else {
             myNavigation.removeClass('sticky');
